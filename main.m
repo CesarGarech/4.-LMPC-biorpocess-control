@@ -45,7 +45,7 @@ sys = ss(A, B, C, D);
 % model = 'sys'; % Replace with the actual model name
 sysd = setmpcsignals(sys,MV=1);
 Ts = 0.1; % Sampling time
-N = 8; %Prediction Horizond
+N = 10; %Prediction Horizon
 Nu = 2; %Prediction control
 W = struct('MV',0.1,'MVRate',0.1, 'OV',0.01, 'ECR', 1000);
 MV = struct('Min',0,'Max',10, 'ScaleFactor', 1, 'Name','F');
