@@ -47,7 +47,7 @@ sysd = setmpcsignals(sys,MV=1);
 Ts = 0.1; % Sampling time
 N = 8; %Prediction Horizond
 Nu = 2; %Prediction control
-W = struct('MV',0.1,'MVRate',0.1, 'OV',0.01, 'ECR', 1000);
+W = struct('MV',0.1,'MVRate',1, 'OV',0.1, 'ECR', 1000);
 MV = struct('Min',0,'Max',10, 'ScaleFactor', 1, 'Name','F');
 OV = struct('Min',0,'Max',20, 'ScaleFactor', 1, 'Name', 'S');
 mpcverbosity off;
